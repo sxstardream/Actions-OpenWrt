@@ -19,7 +19,6 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # Diy Source Code
-#git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata #netdata汉化
 rm -rf ./package/lean/luci-theme-argon #删除Lean自带的argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon #新argon主题
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config #新argon主题控制程序
